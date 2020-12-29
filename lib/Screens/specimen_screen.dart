@@ -84,7 +84,11 @@ class _SpecimenState extends State<Specimen> {
           },
         ),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: Colors.indigo[200],
+        label: Text('Add Specimen'),
+        icon: Icon(Icons.add),
         tooltip: 'Add Specimen',
         onPressed: () {
           // set up the AlertDialog
@@ -123,7 +127,6 @@ class _SpecimenState extends State<Specimen> {
             },
           );
         },
-        child: Icon(Icons.add),
       ),
     );
   }

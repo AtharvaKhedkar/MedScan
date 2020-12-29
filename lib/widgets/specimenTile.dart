@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class SpecimenTile extends StatelessWidget {
   SpecimenTile({Key key, this.specimenData}) : super(key: key);
@@ -7,36 +6,56 @@ class SpecimenTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height / 8,
-      margin: EdgeInsets.symmetric(
-        horizontal: 8,
-        vertical: 4,
-      ),
-      child: Card(
-        elevation: 5,
-        child: Container(
-          margin: EdgeInsets.symmetric(vertical: 2.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+    return Card(
+      elevation: 8.0,
+      margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+      child: Container(
+        decoration: BoxDecoration(color: Colors.black54),
+        child: ListTile(
+          contentPadding:
+              EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+          leading: Container(
+            padding: EdgeInsets.only(right: 12.0),
+            decoration: new BoxDecoration(
+              border: new Border(
+                right: new BorderSide(width: 1.0, color: Colors.white),
+              ),
+            ),
+            child: Icon(Icons.medical_services, color: Colors.white),
+          ),
+          title: Text(
+            specimenData['sampleName'],
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+          // subtitle: Text("Intermediate", style: TextStyle(color: Colors.white)),
+
+          subtitle: Column(
             children: [
-              Text(
-                specimenData['sampleName'],
-                style:
-                    GoogleFonts.montserrat(fontSize: 16, color: Colors.black54),
+              Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.date_range,
+                    color: Colors.amberAccent,
+                    size: 18,
+                  ),
+                  Text("Date: ${specimenData['date']}",
+                      style: TextStyle(color: Colors.white))
+                ],
               ),
-              Text(
-                "Date: ${specimenData['date']}",
-                style:
-                    GoogleFonts.montserrat(fontSize: 14, color: Colors.black54),
-              ),
-              Text(
-                "Time: ${specimenData['time']}",
-                style:
-                    GoogleFonts.montserrat(fontSize: 14, color: Colors.black54),
+              Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.lock_clock,
+                    color: Colors.amberAccent,
+                    size: 18,
+                  ),
+                  Text("Time: ${specimenData['time']}",
+                      style: TextStyle(color: Colors.white))
+                ],
               ),
             ],
           ),
+          trailing: Icon(Icons.notes, color: Colors.white, size: 30.0),
         ),
       ),
     );

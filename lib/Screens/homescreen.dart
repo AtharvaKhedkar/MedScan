@@ -34,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.indigo[200],
         title: Text(
           'Welcome ',
@@ -43,8 +44,15 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         centerTitle: true,
         actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.exit_to_app),
+          FlatButton.icon(
+            label: Text(
+              'Log Out',
+              style: TextStyle(color: Colors.white),
+            ),
+            icon: Icon(
+              Icons.exit_to_app,
+              color: Colors.white,
+            ),
             onPressed: () {
               AuthService().signOut();
               Navigator.pushReplacement(context,
