@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:barcode_scan_fix/barcode_scan.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +14,6 @@ class BarcodeScanScreen extends StatefulWidget {
 }
 
 class _BarcodeScanScreenState extends State<BarcodeScanScreen> {
-  File pickedImage;
   String _scanBarcode = '';
 
   Future<void> scanBarcode() async {
@@ -70,8 +68,8 @@ class _BarcodeScanScreenState extends State<BarcodeScanScreen> {
             icon: Icon(Icons.exit_to_app),
             onPressed: () {
               AuthService().signOut();
-              Navigator.pushReplacement(
-                  context, MaterialPageRoute(builder: (context) => LoginScreen()));
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => LoginScreen()));
             },
           ),
         ],

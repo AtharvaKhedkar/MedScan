@@ -3,8 +3,8 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:medscan/Screens/dailyVisit.dart';
-import 'package:medscan/Screens/notes.dart';
 import 'package:medscan/Screens/patientProfile.dart';
+import 'package:medscan/Screens/specimen_screen.dart';
 import 'package:medscan/authentication_screen/authservice.dart';
 import 'package:medscan/authentication_screen/login_screen.dart';
 import 'package:medscan/theme/extention.dart';
@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> _widgetOptions = <Widget>[
     PatientProfile(),
     Home(),
-    Notes(),
+    Specimen(),
   ];
 
   GlobalKey _bottomNavigationKey = GlobalKey();
@@ -215,60 +215,58 @@ class _HomeState extends State<Home> {
               color: Colors.indigo[200],
               height: 250,
               child: StreamBuilder(
-                  stream: FirebaseFirestore.instance
-                      .collection("Patients")
-                      .doc(patientID)
-                      .snapshots(),
-                  builder: (context, snapshot) {
-                    if (snapshot.data == null)
-                      return CircularProgressIndicator();
-                    return ListView.builder(
-                        scrollDirection: Axis.vertical,
-                        itemCount: snapshot.data['textNote'].length,
-                        itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: StreamBuilder(
-                                stream: FirebaseFirestore.instance
-                                    .collection("Patients")
-                                    .doc(patientID)
-                                    .snapshots(),
-                                builder: (context, snapshot) {
-                                  DocumentSnapshot notesText = snapshot.data;
-                                  if (snapshot.data == null)
-                                    return CircularProgressIndicator();
-                                  return ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
-                                    child: ListTile(
-                                      trailing: GestureDetector(
-                                        onTap: () {
-                                          print("TAPPED");
-                                          FirebaseFirestore.instance
-                                              .collection("Patients")
-                                              .doc(patientID)
-                                              .update(
-                                            {
-                                              "textNote":
-                                                  FieldValue.arrayRemove(
-                                                [
-                                                  notesText.data()['textNote']
-                                                      [index]
-                                                ],
-                                              ),
-                                            },
-                                          );
-                                        },
-                                        child: Icon(Icons.delete),
-                                      ),
-                                      tileColor: Colors.white30,
-                                      title: Text(
-                                          notesText.data()['textNote'][index]),
-                                    ),
-                                  );
-                                }),
-                          );
-                        });
-                  }),
+                stream: FirebaseFirestore.instance
+                    .collection("Patients")
+                    .doc(patientID)
+                    .snapshots(),
+                builder: (context, snapshot) {
+                  if (snapshot.data == null) return CircularProgressIndicator();
+                  return ListView.builder(
+                    scrollDirection: Axis.vertical,
+                    itemCount: snapshot.data['textNote'].length,
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: StreamBuilder(
+                          stream: FirebaseFirestore.instance
+                              .collection("Patients")
+                              .doc(patientID)
+                              .snapshots(),
+                          builder: (context, snapshot) {
+                            DocumentSnapshot notesText = snapshot.data;
+                            if (snapshot.data == null)
+                              return CircularProgressIndicator();
+                            return ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: ListTile(
+                                trailing: GestureDetector(
+                                  onTap: () {
+                                    print("TAPPED");
+                                    FirebaseFirestore.instance
+                                        .collection("Patients")
+                                        .doc(patientID)
+                                        .update(
+                                      {
+                                        "textNote": FieldValue.arrayRemove(
+                                          [notesText.data()['textNote'][index]],
+                                        ),
+                                      },
+                                    );
+                                  },
+                                  child: Icon(Icons.delete),
+                                ),
+                                tileColor: Colors.white30,
+                                title:
+                                    Text(notesText.data()['textNote'][index]),
+                              ),
+                            );
+                          },
+                        ),
+                      );
+                    },
+                  );
+                },
+              ),
             ),
           ),
         )
