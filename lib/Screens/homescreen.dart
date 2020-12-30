@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:medscan/Screens/barcodeScanScreen.dart';
 import 'package:medscan/Screens/dailyVisit.dart';
 import 'package:medscan/Screens/patientProfile.dart';
 import 'package:medscan/Screens/specimen_screen.dart';
@@ -34,16 +35,26 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
         backgroundColor: Colors.indigo[200],
-        title: Text(
-          'Welcome ',
-          style: TextStyle(
-            fontSize: 24,
-          ),
-        ),
-        centerTitle: true,
         actions: <Widget>[
+          FlatButton.icon(
+            label: Text(
+              'Next Patient',
+              style: TextStyle(color: Colors.white),
+            ),
+            icon: Icon(
+              Icons.queue_play_next,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) => BarcodeScanScreen()),
+                ModalRoute.withName('/'),
+              );
+            },
+          ),
           FlatButton.icon(
             label: Text(
               'Log Out',
@@ -55,8 +66,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             onPressed: () {
               AuthService().signOut();
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => LoginScreen()));
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) => LoginScreen()),
+                ModalRoute.withName('/'),
+              );
             },
           ),
         ],

@@ -1,16 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:medscan/Screens/visitPage.dart';
 
 import '../constants.dart';
 
-class DailyVisits extends StatefulWidget {
+class DailyVisits extends StatelessWidget {
   DailyVisits({@required this.visitDate});
-  var visitDate;
-  @override
-  _DailyVisitsState createState() => _DailyVisitsState();
-}
+  final visitDate;
 
-class _DailyVisitsState extends State<DailyVisits> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +16,7 @@ class _DailyVisitsState extends State<DailyVisits> {
             .collection("Patients")
             .doc(patientID)
             .collection("Daily Visit")
-            .doc(widget.visitDate)
+            .doc(visitDate)
             .snapshots(),
         builder: (context, snapshot) {
           DocumentSnapshot visits = snapshot.data;
@@ -30,6 +27,19 @@ class _DailyVisitsState extends State<DailyVisits> {
               return Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: ListTile(
+                  onTap: () {
+                    print(visits.data()["Visit ${index + 1}"]);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => VisitScreen(
+                          visitData: visits.data()["Visit ${index + 1}"],
+                          visitDate: visitDate,
+                          visitNumber: index + 1,
+                        ),
+                      ),
+                    );
+                  },
                   trailing: Icon(Icons.chevron_right),
                   tileColor: Colors.indigo[200],
                   title: Text("Visit ${index + 1}"),

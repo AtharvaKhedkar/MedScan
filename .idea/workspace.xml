@@ -1,25 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="51afcea1-db6e-4169-8780-f9fda4f4aba8" name="Default Changelist" comment="" />
+    <list default="true" id="51afcea1-db6e-4169-8780-f9fda4f4aba8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/completed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/hand-emoji.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/non-completed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Screens/visitPage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/custom_clippers/blue_top_clipper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/custom_clippers/grey_top_clipper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/custom_clippers/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/custom_clippers/white_top_clipper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/task/TaskContent.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/task/TaskItem.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/task/TaskList.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/task/TaskTitle.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Screens/dailyVisit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/dailyVisit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Screens/homescreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/homescreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/theme/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theme/theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1mLIMjkgrLIxWT2esHl4sUZurfB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/widgets" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/widgets" />
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/lib/widgets/task" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
@@ -40,22 +103,42 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="223" key="GridCell.Tab.0.bottom" timestamp="1609271096994">
+    <state x="458" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609274830881">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1609271096994" />
-    <state width="1398" height="223" key="GridCell.Tab.0.center" timestamp="1609271096993">
+    <state x="458" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.799@0.25.1440.799" timestamp="1609274830881" />
+    <state width="1398" height="219" key="GridCell.Tab.0.bottom" timestamp="1609323148006">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1609271096993" />
-    <state width="1398" height="223" key="GridCell.Tab.0.left" timestamp="1609271096993">
+    <state width="1398" height="219" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1609323148006" />
+    <state width="1398" height="219" key="GridCell.Tab.0.center" timestamp="1609323148005">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1609271096993" />
-    <state width="1398" height="223" key="GridCell.Tab.0.right" timestamp="1609271096994">
+    <state width="1398" height="219" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1609323148005" />
+    <state width="1398" height="219" key="GridCell.Tab.0.left" timestamp="1609323148004">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1609271096994" />
+    <state width="1398" height="219" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1609323148004" />
+    <state width="1398" height="219" key="GridCell.Tab.0.right" timestamp="1609323148005">
+      <screen x="0" y="25" width="1440" height="799" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1609323148005" />
+    <state x="100" y="125" width="1240" height="599" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609321911076">
+      <screen x="0" y="25" width="1440" height="799" />
+    </state>
+    <state x="100" y="125" width="1240" height="599" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1440.799@0.25.1440.799" timestamp="1609321911076" />
   </component>
 </project>
