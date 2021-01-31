@@ -20,27 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51afcea1-db6e-4169-8780-f9fda4f4aba8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/completed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/hand-emoji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/non-completed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Screens/visitPage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/custom_clippers/blue_top_clipper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/custom_clippers/grey_top_clipper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/custom_clippers/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/custom_clippers/white_top_clipper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/task/TaskContent.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/task/TaskItem.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/task/TaskList.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/task/TaskTitle.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Screens/dailyVisit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/dailyVisit.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Screens/homescreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/homescreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/theme/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theme/theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/hand-emoji.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +56,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/widgets" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -120,22 +102,26 @@
       <screen x="0" y="25" width="1440" height="799" />
     </state>
     <state x="458" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.799@0.25.1440.799" timestamp="1609274830881" />
-    <state width="1398" height="219" key="GridCell.Tab.0.bottom" timestamp="1609323148006">
+    <state width="1398" height="336" key="GridCell.Tab.0.bottom" timestamp="1610270155628">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1398" height="219" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1609323148006" />
-    <state width="1398" height="219" key="GridCell.Tab.0.center" timestamp="1609323148005">
+    <state width="1398" height="336" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1610270155628" />
+    <state width="1398" height="336" key="GridCell.Tab.0.center" timestamp="1610270155628">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1398" height="219" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1609323148005" />
-    <state width="1398" height="219" key="GridCell.Tab.0.left" timestamp="1609323148004">
+    <state width="1398" height="336" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1610270155628" />
+    <state width="1398" height="336" key="GridCell.Tab.0.left" timestamp="1610270155627">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1398" height="219" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1609323148004" />
-    <state width="1398" height="219" key="GridCell.Tab.0.right" timestamp="1609323148005">
+    <state width="1398" height="336" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1610270155627" />
+    <state width="1398" height="336" key="GridCell.Tab.0.right" timestamp="1610270155628">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
-    <state width="1398" height="219" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1609323148005" />
+    <state width="1398" height="336" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1610270155628" />
+    <state x="221" y="60" key="SettingsEditor" timestamp="1610268805729">
+      <screen x="0" y="25" width="1440" height="799" />
+    </state>
+    <state x="221" y="60" key="SettingsEditor/0.25.1440.799@0.25.1440.799" timestamp="1610268805729" />
     <state x="100" y="125" width="1240" height="599" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609321911076">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
