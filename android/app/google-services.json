@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "544262913242",
+    "firebase_url": "https://medscan-bd3f1.firebaseio.com",
+    "project_id": "medscan-bd3f1",
+    "storage_bucket": "medscan-bd3f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544262913242:android:f2c64aa32fe4d9bd9039e3",
+        "android_client_info": {
+          "package_name": "com.medscan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544262913242-v0q2fjclm0i0crd3uvntgqa7dei40g6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medscan",
+            "certificate_hash": "a2970bdc07738bd066f311fa38170fd7320bfb94"
+          }
+        },
+        {
+          "client_id": "544262913242-ctvqa7k4qg3dlrrie79i7hi3ld08dkh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkav5CS5vpAxu7_XWhJQ7tYv-ECq6ZcFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544262913242-ctvqa7k4qg3dlrrie79i7hi3ld08dkh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

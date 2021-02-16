@@ -20,7 +20,6 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
-/android/app/google-services.json
 .DS_Store
 .flutter-plugins
 .flutter-plugins-dependencies
