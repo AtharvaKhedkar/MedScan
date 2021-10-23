@@ -32,8 +32,8 @@ class _PatientProfileState extends State<PatientProfile> {
       (value) {
         setState(() {
           allergies = value.data()['Allergies'];
-          name = value.data()['Full Name'];
-          bloodGrp = value.data()['Blood Group'];
+          name = value.data()['Full_Name'];
+          bloodGrp = value.data()['Blood_Group'];
           age = value.data()['Age'].toString();
           gender = value.data()['Gender'];
           height = value.data()['Height'].toString();

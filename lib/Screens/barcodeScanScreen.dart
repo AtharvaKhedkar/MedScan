@@ -98,7 +98,7 @@ class _BarcodeScanScreenState extends State<BarcodeScanScreen> {
               automaticallyImplyLeading: false,
               title: Text('Welcome Doctor'),
               actions: <Widget>[
-                FlatButton.icon(
+                TextButton.icon(
                   label: Text(
                     'Logout',
                     style: TextStyle(color: Colors.white),

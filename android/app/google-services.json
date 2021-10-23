@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "544262913242-ecgifqerlclcknnjo28jqkea63uias3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medscan",
+            "certificate_hash": "f61ca9e909171bd5aea984da0f29cee6d1ee99bf"
+          }
+        },
+        {
+          "client_id": "544262913242-kfo566sv2s9653aa83djuddepmbp7q85.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medscan",
+            "certificate_hash": "2b843a5bd55dbd5cdfaad8cbbc535d1e2ead0adc"
+          }
+        },
+        {
           "client_id": "544262913242-v0q2fjclm0i0crd3uvntgqa7dei40g6b.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

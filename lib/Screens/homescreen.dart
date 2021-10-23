@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: Colors.indigo[200],
         actions: <Widget>[
-          FlatButton.icon(
+          TextButton.icon(
             label: Text(
               'Next Patient',
               style: TextStyle(color: Colors.white),
@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
               );
             },
           ),
-          FlatButton.icon(
+          TextButton.icon(
             label: Text(
               'Log Out',
               style: TextStyle(color: Colors.white),
